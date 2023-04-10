@@ -134,10 +134,9 @@ export default function Home() {
                           >
                             {console.log(filterItems.url)}
                             <Card
-                              foodName={filterItems.name}
-                              item={filterItems}
+                              foodItem = {filterItems}
                               options={filterItems.options[0]}
-                              ImgSrc={filterItems.img}
+                              
                             ></Card>
                           </div>
                         );
