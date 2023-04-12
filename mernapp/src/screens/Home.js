@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import Card from "../components/Card";
-// import { Card } from "react-bootstrap";
+import MyCard from "../components/MyCard";
+
 
 export default function Home() {
   const [foodCat, setFoodCat] = useState([]);
@@ -57,29 +57,14 @@ export default function Home() {
               </button> */}
               </div>
             </div>
-            <div className="carousel-item active">
-              <img
-                src="https://source.unsplash.com/random/900×700/?burger"
-                className="d-block w-100"
-                style={{ filter: "brightness(30%)" }}
-                alt="..."
-              />
+            <div className="carousel-item active" >
+              <img src="https://source.unsplash.com/random/900x700/?burger" className="d-block w-100  " style={{ filter: "brightness(30%)" }} alt="..." />
             </div>
             <div className="carousel-item">
-              <img
-                src="https://source.unsplash.com/random/900×700/?pizza"
-                className="d-block w-100"
-                style={{ filter: "brightness(30%)" }}
-                alt="..."
-              />
+              <img src="https://source.unsplash.com/random/900x700/?pastry" className="d-block w-100 " style={{ filter: "brightness(30%)" }} alt="..." />
             </div>
             <div className="carousel-item">
-              <img
-                src="https://source.unsplash.com/random/900×700/?barbeque"
-                className="d-block w-100"
-                style={{ filter: "brightness(30%)" }}
-                alt="..."
-              />
+              <img src="https://source.unsplash.com/random/900x700/?barbeque" className="d-block w-100 " style={{ filter: "brightness(30%)" }} alt="..." />
             </div>
           </div>
           <button
@@ -133,11 +118,11 @@ export default function Home() {
                             className="col-12 col-md-6 col-lg-3"
                           >
                             {console.log(filterItems.url)}
-                            <Card
+                            <MyCard
                               foodItem = {filterItems}
                               options={filterItems.options[0]}
                               
-                            ></Card>
+                            ></MyCard>
                           </div>
                         );
                       })
