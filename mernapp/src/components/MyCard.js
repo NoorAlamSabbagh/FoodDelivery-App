@@ -31,9 +31,8 @@ const handleAddToCart = async() => {
         return
       }
    else if(food.size !== size){
-  await dispatch({ type: "ADD", id: props.foodItem._id, name: foodItem.name, price: finalPrice, qty: qty, size: size, img: props.ImgSrc })
-  return
-
+  await dispatch({ type: "ADD", id: props.foodItem._id, price: finalPrice, qty: qty, size: size, img: props.ImgSrc })
+return
 }
 return
   }
@@ -90,3 +89,8 @@ return
     </div>
   );
 }
+
+
+
+
+
